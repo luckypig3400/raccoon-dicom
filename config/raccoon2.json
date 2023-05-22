@@ -1,0 +1,17 @@
+{
+  "mongodb": {
+    "hosts": ["127.0.0.1"],
+    "ports": [27017],
+    "username": "",
+    "password": "",
+    "authSource": "admin",
+    "database": "raccoon-dicom",
+    "debug": false
+  },
+  "raccoon": {
+    "dicomStoreRoot": "C:/Services/raccoon2-dicomFiles",
+    "raccoonUploadScriptPath": "C:/git_repos/raccoon-dicom/local/dicom-uploader-stow.js",
+    "mode": "STOW",
+    "stowUrl": "http://127.0.0.1:8082/dicom-web/studies"
+  }
+}
