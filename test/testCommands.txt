@@ -1,0 +1,6 @@
+cd test/dicomFiles/jpeg2000
+
+curl --location --request POST "http://localhost:8082/dicom-web/studies" ^
+--header "Accept: application/dicom+json" ^
+--header "Content-Type: multipart/related; type=\"application/dicom\"" ^
+--form "file=@example-jpeg-2000.dcm; type=application/dicom"
