@@ -97,6 +97,7 @@
     "passport-local": "^1.0.0",
     "path-match": "^1.2.4",
     "regexparam": "^2.0.1",
+    "request": "^2.88.2",
     "request-compose": "^2.1.6",
     "request-multipart": "^1.0.0",
     "run-script-os": "^1.1.6",
