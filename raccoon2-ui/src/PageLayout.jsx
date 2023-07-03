@@ -5,14 +5,20 @@ import { ROUTERS } from "./ROUTER";
 
 const PageLayout = () => {
     return (
-        <div style={{ display: "flex", height: "100%", minHeight: "400px" }}>
+        <div
+            style={{
+                display: "flex",
+                height: "100%",
+                minHeight: window.innerHeight
+            }}
+        >
             <Sidebar>
                 <Menu>
                     {ROUTERS.map((ROUTE) => {
                         return (
                             <MenuItem
                                 key={ROUTE.key}
-                                routerlink={<Link to={ROUTE.path} />}
+                                component={<Link to={ROUTE.path} />}
                             >
                                 {ROUTE.value}
                             </MenuItem>
