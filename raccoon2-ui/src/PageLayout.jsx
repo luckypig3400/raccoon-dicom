@@ -8,8 +8,7 @@ const PageLayout = () => {
         <div
             style={{
                 display: "flex",
-                height: "100%",
-                minHeight: window.innerHeight
+                height: "100vh"
             }}
         >
             <Sidebar>
@@ -26,7 +25,16 @@ const PageLayout = () => {
                     })}
                 </Menu>
             </Sidebar>
-            <Outlet />
+            <main
+                style={{
+                    height: "100vh",
+                    width: "100%"
+                }}
+            >
+                <div style={{ padding: "1rem" }}>
+                    <Outlet />
+                </div>
+            </main>
         </div>
     );
 };
