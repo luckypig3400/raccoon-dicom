@@ -3,7 +3,14 @@ import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Outlet, Link } from "react-router-dom";
 import { ROUTERS } from "./ROUTER";
 
+import SidebarFooter from "./components/SideBarFooter";
+import LogoutIcon from "@mui/icons-material/Logout";
+
 const PageLayout = () => {
+    const handleLogout = () => {
+        console.log("handleLogout");
+    };
+
     return (
         <div
             style={{
@@ -23,6 +30,11 @@ const PageLayout = () => {
                             </MenuItem>
                         );
                     })}
+                    <SidebarFooter>
+                        <MenuItem icon={<LogoutIcon />} onClick={handleLogout}>
+                            LogOut
+                        </MenuItem>
+                    </SidebarFooter>
                 </Menu>
             </Sidebar>
             <main
