@@ -1,16 +1,18 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Outlet, Link } from "react-router-dom";
 import { ROUTERS } from "./ROUTER";
 
 import SidebarFooter from "./components/SideBarFooter";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { logout } from "./redux/slices/Auth";
 
 const PageLayout = () => {
+    const dispatch = useDispatch();
     const handleLogout = () => {
-        console.log("handleLogout");
+        dispatch(logout());
     };
-
     return (
         <div
             style={{
