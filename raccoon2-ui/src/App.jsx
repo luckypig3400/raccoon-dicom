@@ -5,8 +5,12 @@ import "./App.css";
 import { ROUTERS } from "./ROUTER";
 import { Routes, Route } from "react-router-dom";
 import PageLayout from "./PageLayout";
+import { useSelector } from "react-redux";
 
 function App() {
+    const { user } = useSelector((state) => state.auth);
+    console.log(user);
+
     return (
         <div className="App">
             <Routes>
