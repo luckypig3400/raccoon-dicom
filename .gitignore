@@ -2,6 +2,10 @@
 /tempUploadFiles/**
 !/tempUploadFiles/.gitkeep
 
+# ignore UI build & React packages
+node_modules
+dist
+
 # ignore environment variable
 /.env
 
