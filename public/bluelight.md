@@ -1,4 +1,18 @@
-## Integrate Bluelight Dicom Viewer into raccoon-dicom
+# Integrate [Bluelight Dicom Viewer](https://github.com/cylab-tw/bluelight) into [raccoon-dicom](https://github.com/Chinlinlee/raccoon-dicom)
+
+## Requirements
+### 1. We assuming you have done deployed raccoon-dicom
+### 2. In your raccoon-dicom project root modify `app.js`
+#### Add the following line:
+```javascript=
+app.use(express.static('public'));
+```
+
+👉 You can refer to [this file](https://github.com/luckypig3400/raccoon-dicom/blob/main/app.js)
+
+### 3. Create folder `public` in raccoon-dicom project root
+
+## Get & Config Bluelight
 ### Step1 - git clone [Bluelight](https://github.com/cylab-tw/bluelight)
 ```
 cd public
